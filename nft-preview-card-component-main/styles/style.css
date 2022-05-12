@@ -53,13 +53,15 @@ p {
     font-weight: 300;
 }
 
+.container {
+    width: 350px;
+}
 
 .card {
     background-color: var(--card-BG);
     padding: 2rem;
     border-radius: 1.25rem;
     margin-bottom: 1rem;
-    width: 350px;
 }
 
 .card ul {
@@ -133,7 +135,6 @@ p {
 
 @media (min-width: 375px) {
     .container{
-        width: 350px;
         margin: 0 auto 1rem;
     }
 }
