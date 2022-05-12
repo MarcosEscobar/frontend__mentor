@@ -59,6 +59,7 @@ p {
     padding: 2rem;
     border-radius: 1.25rem;
     margin-bottom: 1rem;
+    width: 350px;
 }
 
 .card ul {
@@ -130,9 +131,9 @@ p {
 
 }
 
-@media (min-width: 500px) {
+@media (min-width: 375px) {
     .container{
-        width: 375px;
+        width: 350px;
         margin: 0 auto 1rem;
     }
 }
