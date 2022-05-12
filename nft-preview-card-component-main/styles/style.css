@@ -68,6 +68,7 @@ p {
     padding: 1.5rem 0;
     border-bottom: 1px solid var(--line);
 }
+
 .card ul li:first-child {
     color: var(--cyan);
     font-weight: 700;
