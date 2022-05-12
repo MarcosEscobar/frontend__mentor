@@ -101,6 +101,7 @@ p {
 
 .card .card-image div:hover {
     opacity: 1;
+    cursor: pointer;
 }
 
 .container .card-image div img {
