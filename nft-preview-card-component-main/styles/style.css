@@ -67,7 +67,7 @@ p {
     padding: 2rem;
     border-radius: 1.25rem;
     margin-bottom: 1rem;
- 
+    box-shadow: 0 0.8rem 2rem 1rem rgb(0 0 0 / 0.2);
 }
 
 .card ul {
