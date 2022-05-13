@@ -24,11 +24,11 @@ body {
     color: var(--light-grey);
 }
 
-main{
-	display: flex;
-	align-items: center;
+main {
+    display: flex;
+    align-items: center;
     justify-content: center;
-	min-height: 100vh;
+    min-height: 100vh;
 }
 
 h1 {
@@ -37,7 +37,6 @@ h1 {
 }
 
 .container {
-    display: flex;
     width: 400px;
 }
 
@@ -55,6 +54,12 @@ figure {
     padding: 1.8rem;
     border-radius: 1.8rem;
     box-shadow: 0 0.8rem 2rem 1rem rgb(0 0 0 / 0.1);
+    min-width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
 }
 
 figure h1 {
@@ -63,6 +68,11 @@ figure h1 {
 
 figure p {
     line-height: 1.5rem;
+    margin-bottom: 1.8rem;
+}
+
+figure .icon {
+    align-self: flex-start;
 }
 
 .roundbox {
@@ -75,14 +85,26 @@ figure p {
     justify-content: center;
 }
 
-.rating {
+.rating-form .rating {
     display: flex;
     justify-content: space-between;
-    margin: 1.8rem 0 1.8rem 0;
+    margin: 0 0 1.8rem 0;
+    width: 100%;
+}
+
+.rating div:hover {
+    background-color: var(--orange);
+    transition: ease-in-out .3s;
 }
 
 .rate {
     cursor: pointer;
+    transition: ease-in-out .3s;
+}
+
+.rate-selected {
+    background-color: var(--light-grey);
+    color: var(--White);
 }
 
 .button {
@@ -130,9 +152,31 @@ figure p {
     transition: ease-in-out .3s;
 }
 
+/* .rating-form {
+    display: none;
+} */
+.rating-form span{
+    margin: 1.8rem 0 0.5rem 0;
+}
 
+.rating-form h1 {
+    align-self: flex-start;
+}
+
+.rating-result p {
+    text-align: center  ;
+} 
+
+.rating-result .result {
+    margin-top: 1.8rem;
+    color: var(--orange);
+    background-color: var(--dark-blue);
+    padding: 0.3rem 1rem;
+    border-radius: 1.8rem;
+}
 
 footer {
+    display: none;
     position: absolute;
     bottom: 0;
 }
