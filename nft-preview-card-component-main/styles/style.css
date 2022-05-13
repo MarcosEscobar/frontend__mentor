@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
 
-:root{
+:root {
     --cyan: hsl(178, 100%, 50%);
     --soft-blue: hsl(215, 51%, 70%);
     --main-BG: hsl(217, 54%, 11%);
@@ -9,7 +9,7 @@
     --white: hsl(0, 0%, 100%);
 }
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -18,10 +18,10 @@
 body {
     font-family: "Outfit", sans-serif;
     font-size: 18px;
-    color:var(--soft-blue);
+    color: var(--soft-blue);
     background-color: var(--main-BG);
     padding: 1.25rem;
-   
+
 }
 
 img {
@@ -38,7 +38,8 @@ a {
     font-weight: 400;
 }
 
-h1:hover, a:hover {
+h1:hover,
+a:hover {
     color: var(--cyan);
 }
 
@@ -73,7 +74,7 @@ p {
 .card ul {
     display: flex;
     align-items: center;
-    justify-content:space-between;
+    justify-content: space-between;
     padding: 1.5rem 0;
     border-bottom: 1px solid var(--line);
 }
@@ -120,7 +121,7 @@ p {
     transform: translate(-50%, -50%);
 }
 
-.card .card-image img{
+.card .card-image img {
     border-radius: 0.5rem;
 }
 
@@ -131,7 +132,7 @@ p {
     padding-top: 1.5rem;
 }
 
-.card .card-avatar img{
+.card .card-avatar img {
     width: 2.5rem;
     border: 2px solid var(--white);
     border-radius: 50%;
@@ -139,7 +140,7 @@ p {
 }
 
 @media (min-width: 375px) {
-    .container{
+    .container {
         margin: 0 auto 1rem;
     }
 }
