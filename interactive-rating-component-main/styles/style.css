@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Eczar&family=Overpass:wght@400;700&display=swap');
+
+:root {
+    --orange: hsl(25, 97%, 53%);
+    --White: hsl(0, 0%, 100%);
+    --light-grey: hsl(217, 12%, 63%);
+    --medium-grey: hsl(216, 12%, 54%);
+    --dark-blue: hsl(213, 19%, 18%);
+    --dark-blue-card: hsl(213, 19%, 18%, 0.5);
+    --very-dark-blue: hsl(216, 12%, 8%);
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--very-dark-blue);
+    font-family: "Overpass", sans-serif;
+    font-size: 15px;
+    color: var(--light-grey);
+}
+
+main{
+	display: flex;
+	align-items: center;
+    justify-content: center;
+	min-height: 100vh;
+}
+
+h1 {
+    color: var(--White);
+    font-weight: 700;
+}
+
+.container {
+    display: flex;
+    width: 400px;
+}
+
+figure {
+    background: radial-gradient(circle at top, #212832 0, rgb(20, 24, 36) 100%);
+    background-color: rgba(0, 0, 0, 0);
+    background-position-x: 0%;
+    background-position-y: 0%;
+    background-repeat: repeat;
+    background-attachment: scroll;
+    background-image: radial-gradient(circle at center top, rgb(33, 40, 50) 0px, rgb(20, 24, 36) 100%);
+    background-size: auto;
+    background-origin: padding-box;
+    background-clip: border-box;
+    padding: 1.8rem;
+    border-radius: 1.8rem;
+    box-shadow: 0 0.8rem 2rem 1rem rgb(0 0 0 / 0.1);
+}
+
+figure h1 {
+    margin: 1.8rem 0 0.5rem 0;
+}
+
+figure p {
+    line-height: 1.5rem;
+}
+
+.roundbox {
+    background-color: var(--dark-blue);
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.rating {
+    display: flex;
+    justify-content: space-between;
+    margin: 1.8rem 0 1.8rem 0;
+}
+
+.rate {
+    cursor: pointer;
+}
+
+.button {
+    background: transparent;
+    border: 0;
+    border-radius: 0;
+    color: inherit;
+    display: inline-block;
+    font: inherit;
+    height: auto;
+    line-height: 1;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    user-select: none;
+    width: 100%;
+}
+
+.button-inner {
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    font-weight: 400;
+    color: #fff;
+    background: var(--orange);
+    border: 2px solid transparent;
+    border-radius: 1.8rem;
+    height: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    min-width: 100%;
+    padding: 0 1rem;
+    position: relative;
+    /* WebKit Bug 173872 */
+    width: 100%;
+    transition: ease-in-out .3s;
+}
+
+.button:hover .button-inner {
+    background-color: var(--White);
+    color: var(--orange);
+    transition: ease-in-out .3s;
+}
+
+
+
+footer {
+    position: absolute;
+    bottom: 0;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
