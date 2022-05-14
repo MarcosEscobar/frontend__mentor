@@ -51,10 +51,10 @@ figure {
     background-size: auto;
     background-origin: padding-box;
     background-clip: border-box;
-    padding: 1.8rem;
+    padding: 2.2rem;
     border-radius: 1.8rem;
     box-shadow: 0 0.8rem 2rem 1rem rgb(0 0 0 / 0.1);
-    min-width: 400px;
+    min-width: 445px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -77,8 +77,8 @@ figure .icon {
 
 .roundbox {
     background-color: var(--dark-blue);
-    width: 3rem;
-    height: 3rem;
+    width: 3.5rem;
+    height: 3.5rem;
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -89,6 +89,7 @@ figure .icon {
     display: flex;
     justify-content: space-between;
     margin: 0 0 1.8rem 0;
+    padding-right: 0.4rem;
     width: 100%;
 }
 

@@ -1,0 +1,100 @@
+.container {
+    border: solid 1px magenta; //temporary
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $light-grey;
+
+    .card {
+        background-color: $dark-blue;
+        width: 88%; //temporary
+        // height: 100px; //temporary
+        border-radius: 1.5rem;
+        padding: 2.5rem;
+
+        .star {
+            background-color: $medium-grey;
+            width: 4rem;
+            height: 4rem;
+            padding: 1.2rem;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            img {
+                width: 1.4rem;
+            }
+        }
+
+        h1 {
+            font-size: 2.4rem;
+            color: $White;
+            margin-top: 1.9rem;
+        }
+
+        p {
+            font-size: 1.415rem;
+            line-height: 2.2rem;
+            margin-top: 1.2rem;
+        }
+
+        .rating-wraper {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+
+            .rating-btn {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 1.4rem;
+                font-weight: 700;
+                background-color: $medium-grey;
+                width: 4.2rem;
+                height: 4.2rem;
+                border-radius: 50%;
+                margin-top: 2.6rem;
+                
+                &:hover {
+                    background-color: $orange;
+                    color: $White;
+                    cursor: pointer;
+                }
+            }
+
+        }
+
+        .submit-btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: $orange;
+            margin-top: 2.5rem;
+            padding: 1.3rem;
+            border-radius: 4rem;
+            
+            
+            div {
+                text-transform: uppercase;
+                color: $White;
+                font-size: 1.55rem;
+                letter-spacing: 0.1rem;
+                font-weight: 700;
+            }
+
+            &:hover {
+                background-color: $White;
+                cursor: pointer;
+
+                div {
+                    color: $orange;
+                    font-weight: 700;
+                }
+            }
+        }
+    }
+}
